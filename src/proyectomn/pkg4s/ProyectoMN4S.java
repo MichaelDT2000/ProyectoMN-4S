@@ -22,7 +22,7 @@ public class ProyectoMN4S {
         metodoBiseccion met=new metodoBiseccion();
         
         respuesta=met.biseccion(0, 1, 0, "x^2+x-1");
-        System.out.print("La raiz es: "+respuesta+"\n" + "resultado");
+        System.out.print("La raiz es: "+respuesta+"\n" + "resultado \n");
     }
     
 }
