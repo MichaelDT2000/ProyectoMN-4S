@@ -5,6 +5,8 @@
  */
 package proyectomn.pkg4s;
 
+import controladores.metodoBiseccion;
+
 /**
  *
  * @author mayko
@@ -16,6 +18,11 @@ public class ProyectoMN4S {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        double respuesta;
+        metodoBiseccion met=new metodoBiseccion();
+        
+        respuesta=met.biseccion(0, 1, 0, "x^2+x-1");
+        System.out.print("La raiz es: "+respuesta+"\n");
     }
     
 }
