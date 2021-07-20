@@ -5,6 +5,7 @@
  */
 package proyectomn.pkg4s;
 
+import controladores.iteracionSimple_puntoFijo;
 import controladores.metodoBiseccion;
 
 /**
@@ -20,9 +21,13 @@ public class ProyectoMN4S {
         // TODO code application logic here
         double respuesta;
         metodoBiseccion met=new metodoBiseccion();
+        iteracionSimple_puntoFijo pf=new iteracionSimple_puntoFijo();
         
-        respuesta=met.biseccion(0, 1, 0, "x^2+x-1");
-        System.out.print("La raiz es: "+respuesta+"\n" + "resultado \n"+"Michael");
+        respuesta=met.biseccion(1, 3.2, 0.0001, "x^3-7*x^2+14*x-6");
+        System.out.println("La raiz es: "+respuesta+"\n" + "resultado \n"+"Michael");
+        
+        respuesta= pf.PuntoFijo("x^2-2*x+1", "(1+x^2)/2", 0, 0.0072);
+        System.out.println("La Raiz es "+respuesta);
     }
     
 }
