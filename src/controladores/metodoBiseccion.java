@@ -49,8 +49,8 @@ public class metodoBiseccion {
                     }
                     this.contador++;
                 }while(Errpor<errorA );
+                System.out.println("Iteraciones Totales: "+contador);
             }
-            System.out.println("---------------"+contador);
             if(!Double.isNaN(this.x))
             {
                 return this.x;
@@ -59,19 +59,19 @@ public class metodoBiseccion {
         return Double.NaN;
     }
     
-    public double evaluar(String expresion, double x)
-    {
-        j= new JEP();
-        j.addStandardFunctions();
-        j.addStandardConstants();
-        j.addVariable("x", x);
-        j.parseExpression(expresion);
-        if(!j.hasError())
+        public double evaluar(String expresion, double x)
         {
-            return j.getValue();
-        }else
-        {
-            return Double.NaN;
+            j= new JEP();
+            j.addStandardFunctions();
+            j.addStandardConstants();
+            j.addVariable("x", x);
+            j.parseExpression(expresion);
+            if(!j.hasError())
+            {
+                return j.getValue();
+            }else
+            {
+                    return Double.NaN;
+            }
         }
-    }
 }

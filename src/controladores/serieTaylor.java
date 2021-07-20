@@ -15,7 +15,7 @@ public class serieTaylor {
     public double  exponencial(int x, int n)
     {
         double expo=0;
-        double suma=0;
+        double suma=0;             
         for(int i=0; i>n;i++)
         {
             expo= potencia(x, i)/factorial(i);
