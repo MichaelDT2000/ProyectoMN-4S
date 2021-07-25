@@ -5,13 +5,10 @@
  */
 package controladores;
 
-import com.sun.xml.internal.ws.api.message.saaj.SAAJFactory;
-
 /**
- *
- * @author mayko
+ * @author Michael Diaz
+ * date 24/07/2021
  */
-public  class falsaPosicion {
+public class NewtonRaphson {
     
-    //comentario
 }
